@@ -1,0 +1,21 @@
+#users-table td, #users-table th {
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 8px;
+}
+
+#users-table tr:nth-child(odd) {
+    background-color: #0965a0;
+}
+
+#users-table tr:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#users-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color:#0965a0;
+    color: white;
+}
+
