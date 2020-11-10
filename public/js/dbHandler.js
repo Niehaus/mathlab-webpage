@@ -16,7 +16,7 @@ function get_data_test() {
     firebase.database().ref('users').once('value').then(function (snapshot) {
         if (snapshot.exists()) {
             let content = '';
-            const max_value_stage = [-1, -1, -1]
+            const max_value_stage = [100000000, -1, -1]
             const max_value_stage_name = ["", "", ""]
             const list_cells = []
 
@@ -37,7 +37,7 @@ function get_data_test() {
                         'medals': ''
                     }
 
-                    if (values.fase1 > max_value_stage[0]) {
+                    if (values.fase1 < max_value_stage[0]) {
                         max_value_stage[0] = values.fase1
                         max_value_stage_name[0] = values.id
                     }
